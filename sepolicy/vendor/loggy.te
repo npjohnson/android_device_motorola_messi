@@ -1,0 +1,5 @@
+allow toolbox oemfs:file rw_file_perms;
+allow toolbox oemfs:file rw_file_perms;
+
+allow logpersist oemfs:dir rw_dir_perms;
+allow logpersist self:capability { dac_override };

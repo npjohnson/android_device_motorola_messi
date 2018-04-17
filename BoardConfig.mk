@@ -63,3 +63,6 @@ BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
 # inherit from the proprietary version
 include vendor/motorola/messi/BoardConfigVendor.mk
+
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
+SELINUX_IGNORE_NEVERALLOWS := true
